@@ -1,0 +1,14 @@
+.deco{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(218, 226, 182);
+}
+
+.btn{
+    background-color: beige;
+    font-size: 20px;
+    box-shadow: 8px 8px 10px 0 rgb(23, 91, 23);
+}
