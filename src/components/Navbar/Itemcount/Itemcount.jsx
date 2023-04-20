@@ -6,7 +6,7 @@ import "./Itemcount.css";
 const Itemcount = (props) => {
 
     const {data} = props;
-    const {title, price} = data;
+    const {title, price, img} = data;
     const [count, setCount] = useState(1);
 
     const increment = () => {
@@ -22,7 +22,7 @@ const Itemcount = (props) => {
     return (
         <div className='container m-5'>
         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src=""/>
+            <Card.Img variant="top" src={img}/>
             <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
@@ -32,7 +32,7 @@ const Itemcount = (props) => {
         <p>{count}</p>
         <button onClick={increment}>+</button>
         </Card.Body>
-        <Button className='boton'>Comprar</Button>
+        <Button>Comprar</Button>
     </Card>
 </div>
 )

@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from "react";
+import ItemListContainer from "../ItemListContainer";
 
-function Api () {
 
-    const [api, setApi] = useState ();
-    console.log(api);
+export default function Api () {
+
+    const [user, setUser] = useState({});
+
         useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
-    .then((resp) => resp.json())
-    .then((data) => {
-		setApi (data)
-	});
-    }, [])
-
+    .then((res) => res.json())
+    .then((respuesta) => 
+        setUser (respuesta.find((user) => user.name === 'Clementina DuBuque'))
+	)
+    .catch ((error) => console.log(error));
+    }, []);
     return (
-        <div>{api && api.name} </div>
-    )
+        <div>
+            <p>User= {user.name}</p>
+            <ItemListContainer/>
+        </div>
+    );
 }
-
-export default Api;

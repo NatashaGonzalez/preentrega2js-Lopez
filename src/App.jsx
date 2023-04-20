@@ -1,6 +1,6 @@
 import "./App.css";
 import ItemListContainer from "./components/Navbar/ItemListContainer";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar/Navbar";
 import Itemcount from "./components/Navbar/Itemcount/Itemcount";
 import { useEffect, useState } from "react";
 import Api from "./components/Navbar/Api/Api";
@@ -42,6 +42,7 @@ function App() {
   }, []);
 
   return (
+
     <div className="estilos">
       <Navbar />
       <ItemListContainer texto="Venus" />
@@ -52,7 +53,7 @@ function App() {
           <h1>Estamos cargando tu información...</h1>
         ) : (
           items.map((item, index) => {
-            return <Itemcount key={index} data={item} />
+            return <Itemcount key={index} data={item}/>
           })
         )}
       </div>
