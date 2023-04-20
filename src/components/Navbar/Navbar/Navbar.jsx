@@ -3,13 +3,14 @@ import React from "react"
 import "./Navbar.css"
 import { NavLink } from "react-router-dom";
 
+
+//<NavLink to={'/PruebaView'}></NavLink>
 const Navbar = () => {
     return (
         <nav>
             <div className="deco">
-                <NavLink to={'/PruebaView'}>
+                
                 <button className="btn"> Inicio</button>
-                </NavLink>
                 <button className="btn"> Cuidados </button> 
                 <button className="btn"> Especies </button> 
                 <button className="btn"> Exóticas </button> 
