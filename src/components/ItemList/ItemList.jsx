@@ -1,5 +1,4 @@
-import Itemcount from "./components/Navbar/Itemcount/Itemcount";
-
+import Item from "../Item/Item";
 
 const ItemList = ({items}) => {
 
@@ -10,7 +9,7 @@ const ItemList = ({items}) => {
         <h1>Estamos cargando tu información...</h1>
         ) : (
         items.map((item, index) => {
-            return <Itemcount key={index} data={item}/>
+            return <Item key={index} data={item}/>
         })
         )}
     </div>
