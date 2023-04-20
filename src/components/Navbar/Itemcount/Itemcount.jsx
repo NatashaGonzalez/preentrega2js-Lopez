@@ -7,16 +7,16 @@ const Itemcount = (props) => {
 
     const {data} = props;
     const {title, price} = data;
-    const [stock, setstock] = useState(10);
+    const [count, setCount] = useState(1);
 
     const increment = () => {
-        if (stock <= 0){
-            setstock(stock + 1);
+        if (count < 10){
+            setCount(count + 1);
         }
     }
 
     const decrement = () => {
-        stock > 0? setstock (stock -1) : alert ("Ya no queda más stock");
+        count > 0? setCount (count -1) : alert ("Ya no queda más stock");
     }
 
     return (
@@ -29,7 +29,7 @@ const Itemcount = (props) => {
             $ {price}
         </Card.Text>
         <button onClick={decrement}>-</button>
-        <p>{stock}</p>
+        <p>{count}</p>
         <button onClick={increment}>+</button>
         </Card.Body>
         <Button className='boton'>Comprar</Button>
