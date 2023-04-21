@@ -4,16 +4,16 @@ import "./Navbar.css"
 import { NavLink } from "react-router-dom";
 
 
-//<NavLink to={'/PruebaView'}></NavLink>
+
+
 const Navbar = () => {
     return (
         <nav>
             <div className="deco">
-                
-                <button className="btn"> Inicio</button>
-                <button className="btn"> Cuidados </button> 
-                <button className="btn"> Especies </button> 
-                <button className="btn"> Exóticas </button> 
+                <NavLink to="/"className="btn">Inicio</NavLink>
+                <NavLink className="btn"> Cuidados </NavLink> 
+                <NavLink to="/category/especies" className="btn"> Especies</NavLink> 
+                <NavLink to="/category/exoticas" className="btn"> Exóticas </NavLink> 
             </div> 
             <CartWidget/>
         </nav>
