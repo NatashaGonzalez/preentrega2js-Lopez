@@ -18,7 +18,7 @@ const Itemcount = (props) => {
 
     return (
         
-        <div className='container m-5'>
+        <div className='boton'>
 
         <button onClick={decrement}>-</button>
         <p>{count}</p>

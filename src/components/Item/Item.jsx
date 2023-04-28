@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import Itemcount from '../Navbar/Itemcount/Itemcount';
 
 const Item = (props) => {
 
@@ -14,6 +15,7 @@ const Item = (props) => {
             <Card.Text>
             $ {price}
         </Card.Text>
+        <Itemcount/>
         </Card.Body>
     </Card>
 </div>
