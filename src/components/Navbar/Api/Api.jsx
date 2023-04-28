@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ItemListContainer from "../ItemListContainer";
+
 
 
 export default function Api () {
@@ -17,7 +17,6 @@ export default function Api () {
     return (
         <div>
             <p>User= {user.name}</p>
-            <ItemListContainer/>
         </div>
     );
 }
