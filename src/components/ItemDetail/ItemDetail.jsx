@@ -1,6 +1,6 @@
 
-
-const ItemDetail = ({id, title, category, price, description, img}) => {
+const ItemDetail = () => {
+    
     return (
         <article>
             <header>

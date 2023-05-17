@@ -16,10 +16,10 @@ function App() {
       <Navbar/>
       <h1>Venus</h1>
       <p className="usuario"><Api/></p>
-      <ItemDetailContainer/>
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:categoryId" element={<ItemListContainer />} />
+        <Route path="/item/:idproducts" element={<ItemDetailContainer/>} />
       </Routes>
       </BrowserRouter>
     </div>

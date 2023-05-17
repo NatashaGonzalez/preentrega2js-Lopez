@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Itemcount.css";
 import Button from 'react-bootstrap/Button';
+import { NavLink } from 'react-router-dom';
 
 const Itemcount = (props) => {
 
@@ -24,6 +25,9 @@ const Itemcount = (props) => {
         <p>{count}</p>
         <button onClick={increment}>+</button>
         <Button>Comprar</Button>
+        <NavLink to={`/item/${product.id}`}>
+            <button>Detalles</button>
+        </NavLink>
         </div>
     )
 }
