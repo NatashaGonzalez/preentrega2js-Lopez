@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 
-
 export default function Api () {
 
     const [user, setUser] = useState({});
