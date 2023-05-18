@@ -1,5 +1,5 @@
 
-const ItemDetail = () => {
+const ItemDetail = ({ title, img, category, description, price }) => {
     
     return (
         <article>
@@ -10,18 +10,12 @@ const ItemDetail = () => {
                 <img src={img} alt={title} />
             </picture>
             <section>
-                <p>
-                    Categoria: {category}
-                </p>
-                <p>
-                    Descripción: {description}
-                </p>
-                <p>
-                    Precio: {price}
-                </p>
+                <p>Categoria: {category}</p>
+                <p>Descripción: {description}</p>
+                <p>Precio: {price}</p>
             </section>
         </article>
-    )
-}
+    );
+};
 
 export default ItemDetail

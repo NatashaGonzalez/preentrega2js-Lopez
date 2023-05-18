@@ -117,7 +117,7 @@ category: "exoticas"
     export const getProductsById = (productsId) => {
         return new Promise ((resolve)=> {
         setTimeout(() => {
-            resolve(products.find(prod => prod.id === productsId))
+            resolve(products.find((prod) => prod.id === parseInt(productsId)));
         }, 500);
-        })
-    }
+        });
+    };
