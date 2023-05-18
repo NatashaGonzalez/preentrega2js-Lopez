@@ -1,10 +1,11 @@
 import Card from 'react-bootstrap/Card';
 import Itemcount from '../Navbar/Itemcount/Itemcount';
+import { NavLink } from 'react-router-dom';
 
 const Item = (props) => {
 
     const {data} = props;
-    const {title, price, img} = data;
+    const {title, price, img, id} = data;
 
     return(
         <div className='container m-5'>
@@ -16,6 +17,7 @@ const Item = (props) => {
             $ {price}
         </Card.Text>
         <Itemcount/>
+        <button as={NavLink} to={`/item/${id}`}>Detalles</button>
         </Card.Body>
     </Card>
 </div>

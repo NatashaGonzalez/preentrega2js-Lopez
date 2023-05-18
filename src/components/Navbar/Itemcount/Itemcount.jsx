@@ -3,7 +3,6 @@ import "./Itemcount.css";
 import Button from 'react-bootstrap/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { NavLink } from 'react-router-dom';
 
 const Itemcount = (props) => {
 
@@ -40,7 +39,6 @@ const Itemcount = (props) => {
         <button onClick={decrement}>-</button>
         <p>{count}</p>
         <button onClick={increment}>+</button>
-        <NavLink to={`/item/${idproducts}`}><button>Detalles</button></NavLink>
         <Button onClick={addBtnAction}>Comprar</Button>
         <ToastContainer />
         </div>
