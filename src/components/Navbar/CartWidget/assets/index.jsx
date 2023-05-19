@@ -1,13 +1,18 @@
-import React from "react";
-//import { CartContext } from "../../../../context/CartContext";
-//import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { CartContext } from "../../../../context/CartContext";
+import { NavLink } from "react-router-dom";
 
-//<Link to='/cart' style= {{display: totalQuantity > 0 ? 'block' : 'none'}}></Link> const {totalQuantity} = useContext (CartContext) {totalQuantity}
 const CartWidget = () => {
+    const { cartQuantity } = useContext(CartContext)
     
     return (
-        <i className="bi bi-basket-fill"></i>
+        <>
+        {cartQuantity() !==0 && 
+            <NavLink to='/cart'>
+            <i className="bi bi-basket-fill">{cartQuantity()}</i>
+            </NavLink>}
+                </>
     );
 }
 
-export default CartWidget;
+export default CartWidget;

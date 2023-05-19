@@ -53,7 +53,7 @@ title: "Croto",
 price: 1800,
 img: '../croto.jpg',
 category: "exoticas",
-description: "Requiere de un riego abundante en verano y semanal en invierno. También se debe tener en un lugar donde tenga la luz garanrizada."
+description: "Requiere de un riego abundante en verano y semanal en invierno. También se debe tener en un lugar donde tenga la luz garantizada."
 },
 {
 id:8,

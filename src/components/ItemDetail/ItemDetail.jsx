@@ -14,7 +14,7 @@ const ItemDetail = ({ title, img, category, description, price, id }) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, title, price
+            id, title, price, img
     }
 
     addItem(item, quantity)
@@ -42,6 +42,8 @@ const ItemDetail = ({ title, img, category, description, price, id }) => {
                 <ItemCount initial={1} onAdd= {handleOnAdd}/>
             )
         }
+
+        <button>Chekout</button>
         </article>
         
     );
