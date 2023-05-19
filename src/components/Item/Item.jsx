@@ -8,8 +8,6 @@ const Item = (props) => {
     const {data} = props;
     const {title, price, img, id} = data;
 
-    
-
     return(
         <div className='container m-5'>
         <Card style={{ width: '18rem' }}>

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { CartContext, useCart } from "../../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import ItemCount from "../Navbar/Itemcount/Itemcount";
 import Button from "react-bootstrap/esm/Button";
 import { useState } from "react";
@@ -19,20 +19,7 @@ const ItemDetail = ({ title, img, category, description, price, id }) => {
 
     addItem(item, quantity)
     }
-
-    //const {addToCart} = useCart()
-
-    //const Add = () => {
-      //  let acomprar = (
-        //    title,
-          //  price,
-            //img,
-    //        category
-      //  )
-  //      addToCart (acomprar)
-    //}
-    //<Button as={NavLink} to={`/cart`}>Ir al carrito</Button>
-    //<ItemCount onAdd={Add} />
+    //}<Button as={NavLink} to={`/cart`}>Ir al carrito</Button><ItemCount onAdd={Add} />
     return (
         <article>
             <header>
