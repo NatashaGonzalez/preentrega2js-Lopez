@@ -2,11 +2,9 @@ import CartWidget from "../CartWidget/assets";
 import React from "react"
 import "./Navbar.css"
 import { NavLink } from "react-router-dom";
-//import { useCart } from "../../../context/CartContext";
+import Cart from "../../../Cart/Cart";
 
 const Navbar = () => {
-    //const {cart} = useCart ()
-    //console.log (cart)
 
     return (
         <nav>
@@ -17,6 +15,10 @@ const Navbar = () => {
                 <NavLink to="/category/exoticas" className="btn"> Exóticas </NavLink> 
             </div> 
             <CartWidget/>
+            <NavLink>
+            <span>Agregados:</span>
+            {Cart.length}
+            </NavLink>
         </nav>
     )
 }

@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import Itemcount from '../Navbar/Itemcount/Itemcount';
 import { NavLink } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
@@ -17,7 +16,6 @@ const Item = (props) => {
             <Card.Text>
             $ {price}
         </Card.Text>
-        <Itemcount/>
         <Button className='boton' as={NavLink} to={`/item/${id}`}>Detalles</Button>
         </Card.Body>
     </Card>

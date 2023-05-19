@@ -19,7 +19,7 @@ const ItemDetail = ({ title, img, category, description, price, id }) => {
 
     addItem(item, quantity)
     }
-    //}<Button as={NavLink} to={`/cart`}>Ir al carrito</Button><ItemCount onAdd={Add} />
+    
     return (
         <article>
             <header>
