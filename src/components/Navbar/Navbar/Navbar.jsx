@@ -2,11 +2,12 @@ import CartWidget from "../CartWidget/assets";
 import React from "react"
 import "./Navbar.css"
 import { NavLink } from "react-router-dom";
-
-
-
+//import { useCart } from "../../../context/CartContext";
 
 const Navbar = () => {
+    //const {cart} = useCart ()
+    //console.log (cart)
+
     return (
         <nav>
             <div className="deco">
